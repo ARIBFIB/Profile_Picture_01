@@ -1,4 +1,4 @@
-package com.zorona.liverooms;
+package com.example.viewbinding;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -149,7 +149,7 @@ public class FaceBookLoginManager {
 */
 
                     } catch (JSONException e) {
-                        Log.d(TAG, "onCompleted:err  " + e.toString());
+                        Log.d(TAG, "onCompleted:err  " + e);
                         e.printStackTrace();
                     }
                 });

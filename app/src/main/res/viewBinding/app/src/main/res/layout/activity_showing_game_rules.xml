@@ -4,6 +4,96 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background__1"
     tools:context=".Showing_Game_Rules">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/Game_Rule"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="334dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/Rule_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="332dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/Rule_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="313dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/Rule_3"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="317dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="275dp"
+        android:text="@string/Rule_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="26dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="26dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

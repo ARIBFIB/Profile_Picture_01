@@ -6,4 +6,181 @@
     android:layout_height="match_parent"
     tools:context=".Placing_bets">
 
+    <ImageView
+        android:id="@+id/background2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Placing Bets"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:text="WalletMoney"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/walletMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#79000000"
+        android:backgroundTint="@color/white"
+        android:ems="3"
+        android:enabled="false"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/dollar500"
+        android:layout_width="185dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="536dp"
+        android:background="@drawable/dollars500"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dollar500image"
+        android:layout_width="185dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="536dp"
+        android:background="@drawable/dollars500"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="@+id/background2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/throwAreaImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="28dp"
+        android:background="#23FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/dollar1000"
+        android:layout_width="193dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="532dp"
+        android:background="@drawable/dollar1000"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/dollar1000image"
+        android:layout_width="193dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="532dp"
+        android:background="@drawable/dollar1000"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/dollar5000"
+        android:layout_width="189dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="548dp"
+        android:background="@drawable/dollar5000"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dollar5000image"
+        android:layout_width="189dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="548dp"
+        android:background="@drawable/dollar5000"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dollar10kimage"
+        android:layout_width="197dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="532dp"
+        android:background="@drawable/dollar10000"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/dollar10k"
+        android:layout_width="197dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="536dp"
+        android:background="@drawable/dollar10000"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/dollar100k"
+        android:layout_width="197dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="536dp"
+        android:layout_marginEnd="208dp"
+        android:background="@drawable/dollar100000"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="@+id/background2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dollar100kimage"
+        android:layout_width="193dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="532dp"
+        android:layout_marginEnd="212dp"
+        android:background="@drawable/dollar100000"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="@+id/background2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

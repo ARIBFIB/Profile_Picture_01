@@ -1,4 +1,4 @@
-package com.example.viewbinding;
+package com.example.mysticstreetdicegame2;
 
 import android.view.LayoutInflater;
 import android.view.View;

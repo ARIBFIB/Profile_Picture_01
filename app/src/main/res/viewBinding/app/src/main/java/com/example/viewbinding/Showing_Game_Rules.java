@@ -1,8 +1,8 @@
 package com.example.viewbinding;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Showing_Game_Rules extends AppCompatActivity {
 
@@ -10,5 +10,6 @@ public class Showing_Game_Rules extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_showing_game_rules);
+
     }
 }

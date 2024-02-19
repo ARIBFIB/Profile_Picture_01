@@ -1,10 +1,9 @@
-package com.example.viewbinding;
+package com.example.mysticstreetdicegame2;
 
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 
 
 public class Simple_Dice_Model extends AppCompatActivity {

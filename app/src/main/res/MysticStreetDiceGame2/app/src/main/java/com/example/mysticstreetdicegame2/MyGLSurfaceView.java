@@ -1,10 +1,11 @@
-package com.example.viewbinding;
+package com.example.mysticstreetdicegame2;
 
 
 import android.content.Context;
 import android.opengl.GLSurfaceView;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
+
 /*
  * Custom GL view by extending GLSurfaceView so as
  * to override event handlers such as onKeyUp(), onTouchEvent()

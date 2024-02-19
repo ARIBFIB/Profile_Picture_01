@@ -1,4 +1,4 @@
-package com.example.viewbinding;
+package com.example.mysticstreetdicegame2;
 
 
 import android.content.Context;
@@ -11,6 +11,7 @@ import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
+
 import javax.microedition.khronos.opengles.GL10;
 import javax.microedition.khronos.opengles.GL11;
 

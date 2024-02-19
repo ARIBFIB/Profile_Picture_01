@@ -10,16 +10,25 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.dicemode6.Util.FireBaseUtil;
+import com.example.dicemode6.model.UserModel;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.Timestamp;
+import com.google.firebase.firestore.DocumentSnapshot;
+
+public class loginusernameactivity extends AppCompatActivity {
     EditText usernameInput;
     Button letMeInBtn;
     ProgressBar progressBar;
     UserModel userModel;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.loginusernameactivity);
 
         usernameInput = findViewById(R.id.login_username);
         letMeInBtn = findViewById(R.id.login_let_me_in_btn);
@@ -30,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
         letMeInBtn.setOnClickListener((v -> {
             setUsername();
         }));
-
-
     }
 
     void setUsername(){
@@ -45,16 +52,16 @@ public class MainActivity extends AppCompatActivity {
         if(userModel!=null){
             userModel.setUsername(username);
         }else{
-            userModel = new UserModel(username, Timestamp.now(),FirebaseUtil.currentUserId());
+            userModel = new UserModel(username, Timestamp.now());
         }
 
-        FirebaseUtil.currentUserDetails().set(userModel).addOnCompleteListener(new OnCompleteListener<Void>() {
+        FireBaseUtil.currentUserDetails().set(userModel).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 setInProgress(false);
                 if(task.isSuccessful()){
-                    Intent intent = new Intent(LoginUsernameActivity.this,MainActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK );
+                    Intent intent = new Intent(loginusernameactivity.this,MainDashboard.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                 }
             }
@@ -64,12 +71,12 @@ public class MainActivity extends AppCompatActivity {
 
     void getUsername(){
         setInProgress(true);
-        FirebaseUtil.currentUserDetails().get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+        FireBaseUtil.currentUserDetails().get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                 setInProgress(false);
                 if(task.isSuccessful()){
-                    userModel =    task.getResult().toObject(UserModel.class);
+                    userModel =  task.getResult().toObject(UserModel.class);
                     if(userModel!=null){
                         usernameInput.setText(userModel.getUsername());
                     }

@@ -1,4 +1,4 @@
-package com.zorona.liverooms;
+package com.example.viewbinding;
 
 import androidx.databinding.ObservableBoolean;
 

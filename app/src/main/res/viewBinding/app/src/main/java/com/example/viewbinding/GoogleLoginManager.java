@@ -1,4 +1,4 @@
-package com.zorona.liverooms;
+package com.example.viewbinding;
 
 import android.accounts.Account;
 import android.app.Activity;
@@ -42,9 +42,9 @@ public class GoogleLoginManager {
     private final GoogleSignInClient mGoogleSignInClient;
     private Activity context = null;
     GoogleUser googleUser;
-    private WeakReference<GoogleLoginManager> weakAct = new WeakReference<>(this);
+    private final WeakReference<GoogleLoginManager> weakAct = new WeakReference<>(this);
     private GoogleSignInAccount account;
-    private OnGoogleLoginListner onGoogleLoginListner;
+    private final OnGoogleLoginListner onGoogleLoginListner;
 
     public GoogleLoginManager(Activity context, OnGoogleLoginListner onGoogleLoginListner) {
         this.context = context;
@@ -195,9 +195,9 @@ public class GoogleLoginManager {
 
     public static class GetProfileDetails extends AsyncTask<Void, Void, Person> {
 
-        private PeopleService ps;
+        private final PeopleService ps;
         private int authError = -1;
-        private WeakReference<GoogleLoginManager> weakAct;
+        private final WeakReference<GoogleLoginManager> weakAct;
         private String TAG;
 
         public GetProfileDetails(GoogleSignInAccount account, WeakReference<GoogleLoginManager> weakAct, Context context) {

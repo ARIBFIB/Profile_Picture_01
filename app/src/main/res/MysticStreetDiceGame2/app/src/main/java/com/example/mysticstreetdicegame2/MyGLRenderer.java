@@ -1,4 +1,4 @@
-package com.example.viewbinding;
+package com.example.mysticstreetdicegame2;
 
 import android.content.Context;
 import android.opengl.GLSurfaceView;
@@ -10,7 +10,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
     int currentTextureFilter = 0;  // Texture filter (NEW)
     Context context;
-    Triangle triangle ;
+//    Triangle triangle ;
     Square quard;
 
 
@@ -46,7 +46,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
     public MyGLRenderer(Context context) { //Constructor
         this.context = context;
-        triangle = new Triangle();
+//        triangle = new Triangle();
         quard = new Square();
     }
 
@@ -132,7 +132,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         gl.glLoadIdentity();
         gl.glTranslatef(-1.5f,0.0f,-6.0f);
         gl.glRotatef(angleTriangle, 0.0f, 1.0f , 0.0f); //rotate the triangle with y - axis
-        triangle.draw(gl);
+//        triangle.draw(gl);
         // You OpenGL|ES rendering code here
 
 

@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.SHAKE_SENSOR" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +16,7 @@
         android:theme="@style/Theme.MysticStreetDiceGame2"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".dashboard_2nd_sceen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +24,92 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".dashboard"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_settings">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="true"
+            android:label="@string/title_activity_login">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:exported="true" />
+        <activity
+            android:name=".GameLogic"
+            android:exported="true" />
+        <activity
+            android:name=".Hi_Low_throw"
+            android:exported="true" />
+        <activity
+            android:name=".ImagesliderPLayofflinemode"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".JoinGame"
+            android:exported="true" />
+        <activity
+            android:name=".Simple_Dice_Model"
+            android:exported="true" />
+        <activity
+            android:name=".all_menu_notations"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".roll_and_add"
+            android:exported="true" />
+        <activity
+            android:name=".roll_and_divide"
+            android:exported="true" />
+        <activity
+            android:name=".roll_and_multiply"
+            android:exported="true" />
+        <activity
+            android:name=".roll_and_substract"
+            android:exported="true" />
     </application>
 
 </manifest>

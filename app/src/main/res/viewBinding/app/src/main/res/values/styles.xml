@@ -43,10 +43,18 @@
         <item name="thumbTint">@color/pink</item>
     </style>
 
-    <style name="Stripe.CardInputWidget.EditText" parent="Stripe.Base.CardInputWidget.EditText">
+    <style name="Stripe.CardInputWidget.EditText" parent="">
         <item name="android:textColorHint">@color/graylight</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/white</item>
         <item name="background">@color/offwhite</item>
     </style>
+
+<!--    <style name="Stripe.CardInputWidget.EditText" parent="Stripe.Base.CardInputWidget.EditText">-->
+<!--        <item name="android:textColorHint">@color/graylight</item>-->
+<!--        <item name="android:textSize">14sp</item>-->
+<!--        <item name="android:textColor">@color/white</item>-->
+<!--        <item name="background">@color/offwhite</item>-->
+<!--    </style>-->
+
 </resources>

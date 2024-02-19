@@ -4,6 +4,374 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#43A047"
     tools:context=".Dashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/design"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/design_two"
+                    android:padding="10dp"
+                    android:text="DSA"
+                    android:textSize="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/design_two"
+                    android:backgroundTint="#82F48F"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:paddingStart="5dp"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="1dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="10"
+                    android:text="Digital Signature Algorithm"
+                    android:textAllCaps="false"
+                    android:textAppearance="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/editTextText8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/design_two"
+                        android:drawableStart="@drawable/baseline_search_24"
+                        android:ems="14"
+                        android:hint="Key, Signature, SSH, .... "
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColorHint="#AAA7A7"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/design_two"
+                        android:padding="2dp"
+                        android:src="@drawable/baseline_tune_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.964"
+                        app:layout_constraintStart_toEndOf="@+id/editTextText8"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/design_two">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="140dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/baseline_security_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="serif"
+                        android:padding="5dp"
+                        android:text="• Private and Public Key"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="serif"
+                        android:padding="5dp"
+                        android:text="• Generating and Checking Signature"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="serif"
+                        android:padding="5dp"
+                        android:text="Genarating SHA Hasing"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="serif"
+                        android:padding="5dp"
+                        android:text="• Verification Data"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="#093C0B"
+                        android:fontFamily="sans-serif"
+                        android:shadowColor="@color/white"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="10"
+                        android:text="Add Network"
+                        android:textAllCaps="true"
+                        android:textAppearance="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="3dp"
+                    android:text="CREATE FILES"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:background="#2F6931"
+                            android:gravity="center"
+                            android:paddingStart="15dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="3dp"
+                            android:text="Key"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:background="#2F6931"
+                            android:gravity="center"
+                            android:paddingStart="15dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="3dp"
+                            android:text="SHA"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:background="#2F6931"
+                            android:gravity="center"
+                            android:paddingStart="15dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="3dp"
+                            android:text="SIGN"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:background="#2F6931"
+                            android:gravity="center"
+                            android:paddingStart="15dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="3dp"
+                            android:text="VERIFY"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/design_four"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <Button
+                            android:id="@+id/button5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="145dp"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginEnd="145dp"
+                            android:layout_marginBottom="32dp"
+                            android:backgroundTint="#94CF9B"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:paddingStart="5dp"
+                            android:paddingTop="1dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="1dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="3"
+                            android:shadowDy="3"
+                            android:shadowRadius="10"
+                            android:text="Create"
+                            android:textAllCaps="false"
+                            android:textAppearance="@color/white"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

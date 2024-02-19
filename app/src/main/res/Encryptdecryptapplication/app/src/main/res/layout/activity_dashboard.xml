@@ -4,6 +4,142 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard">
+    tools:context=".Dashboard"
+    android:background="#FFE4D6"
+    android:layout_gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/llDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="88dp"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/design1"
+            android:fontFamily="sans-serif-thin"
+            android:padding="19dp"
+            android:shadowColor="#1B1313"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            android:text="Encryption and Decryption Dashboard"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="131dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="528dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="61dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llDashboard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/encryptionButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="136dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#73385C"
+                android:shadowColor="#1B1313"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="5"
+                android:text="Simple Encryption and Decryption"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/encryptionKeyButton"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#73385C"
+                android:shadowColor="#1B1313"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="5"
+                android:text="Encryption and Decryption using key"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.446"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/encryptionButton" />
+
+<!--            <Button-->
+<!--                android:id="@+id/aes_encryptionButton"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="32dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginEnd="32dp"-->
+<!--                android:backgroundTint="#73385C"-->
+<!--                android:shadowColor="#1B1313"-->
+<!--                android:shadowDx="4"-->
+<!--                android:shadowDy="4"-->
+<!--                android:shadowRadius="5"-->
+<!--                android:text="Cypher encryption"-->
+<!--                android:textSize="14dp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.436"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/encryptionKeyButton" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/about_Button"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="32dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginEnd="32dp"-->
+<!--                android:backgroundTint="#73385C"-->
+<!--                android:shadowColor="#1B1313"-->
+<!--                android:shadowDx="4"-->
+<!--                android:shadowDy="4"-->
+<!--                android:shadowRadius="5"-->
+<!--                android:text="ABOUT"-->
+<!--                android:textSize="14dp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.436"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/aes_encryptionButton" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

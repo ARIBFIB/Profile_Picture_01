@@ -1,10 +1,10 @@
-package com.example.viewbinding;
-
-import android.os.Bundle;
+package com.example.mysticstreetdicegame2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Dashboard extends AppCompatActivity {
+import android.os.Bundle;
+
+public class dashboard extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -9,8 +9,8 @@
 
         <Button
             android:id="@+id/btnJoinGame"
-            android:layout_width="@dimen/_160sdp"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_marginStart="8dp"
@@ -26,8 +26,8 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="@dimen/_160sdp"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Simple Dice Roll"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

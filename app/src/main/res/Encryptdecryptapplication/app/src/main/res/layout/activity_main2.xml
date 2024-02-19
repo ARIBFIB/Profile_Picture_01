@@ -4,6 +4,334 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity2"
+    android:padding="20dp"
+    android:background="#FFE4D6">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutActivity02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="88dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewActivity02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/design1"
+            android:fontFamily="sans-serif-thin"
+            android:padding="19dp"
+            android:shadowColor="#1B1313"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            android:text="Encryption and Decryption using Key"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="131dp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollViewActivyt02"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/design1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutActivity02">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/editTextTextMultiLineActivity02"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/design2"
+                android:clickable="true"
+                android:ems="100"
+                android:focusable="true"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="top"
+                android:hint="Enter Text for Encryption"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:id="@id/linearL01Activity02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/design4"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLineActivity02">
+
+                <EditText
+                    android:id="@+id/encrypt_keyActivity02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    android:ems="9"
+                    android:hint="Key"
+                    android:inputType="text"
+                    android:text="" />
+
+                <Switch
+                    android:id="@+id/switch1Activity02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enable"
+                    android:textColor="#F9CAE9" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2Activity02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/design3"
+                android:fontFamily="sans-serif-thin"
+                android:padding="12dp"
+                android:text="Encrypted Text"
+                android:textColor="#F8E5F1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearL01Activity02" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine2Activity02"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="32dp"
+                android:layout_weight="1"
+                android:background="@drawable/design2"
+                android:clickable="true"
+                android:ems="10"
+                android:focusable="true"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="top"
+                android:hint="Encrypted Text"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/dividerActivity02"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2Activity02" />
+
+            <View
+                android:id="@+id/dividerActivity02"
+                android:layout_width="300dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="3dp"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="@color/black"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine3Activity02"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2Activity02" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine3Activity02"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/design2"
+                android:clickable="true"
+                android:ems="100"
+                android:focusable="true"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="top"
+                android:hint="for decryption, paste encrypted text here"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dividerActivity02" />
+
+
+            <LinearLayout
+                android:id="@id/linearL02Activity02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/design4"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/textView3Activity02"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine3Activity02">
+
+                <EditText
+                    android:id="@+id/decrypt_keyActivity02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    android:ems="9"
+                    android:hint="Key"
+                    android:inputType="text"
+                    android:text="" />
+
+                <Switch
+                    android:id="@+id/switch2Activity02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enable"
+                    android:textColor="#F9CAE9" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3Activity02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/design3"
+                android:fontFamily="sans-serif-thin"
+                android:padding="12dp"
+                android:text="Decrypted Text"
+                android:textColor="#AF578C"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearL02Activity02" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine4Activity02"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/design2"
+                android:clickable="true"
+                android:ems="100"
+                android:focusable="true"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="top"
+                android:hint="Decrypted Text"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3Activity02" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2Activity02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewActivyt02">
+
+        <Button
+            android:id="@+id/button3Activity02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#73385C"
+            android:fontFamily="sans-serif-thin"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Decryption" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewActivyt02">
+
+        <Button
+            android:id="@+id/button4Activity02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="#73385C"
+            android:text="Encryption"/>
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

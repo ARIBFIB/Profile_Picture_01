@@ -1,4 +1,4 @@
-package com.example.viewbinding;
+package com.example.mysticstreetdicegame2;
 
 import android.os.Bundle;
 import android.view.View;
@@ -29,7 +29,7 @@ public class ImagesliderPLayofflinemode extends AppCompatActivity {
 
         imageList.add(new image(R.drawable.background2));
         imageList.add(new image(R.drawable.friend));
-        imageList.add(new image(R.drawable.friend));
+        imageList.add(new image(R.drawable.dice1));
         imageList.add(new image(R.drawable.friend));
         imageList.add(new image(R.drawable.friend));
         imageList.add(new image(R.drawable.friend));

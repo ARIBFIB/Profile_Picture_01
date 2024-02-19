@@ -1,9 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".public_key">
+    tools:context=".public_key"
+    android:gravity="center"
+    android:background="#43A047"
+    android:layout_gravity="center">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="650dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#124A14"
+            android:text="Button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate Public Key"
+            android:textSize="30dp"
+            android:shadowRadius="7"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowColor="@color/white"
+            android:background="@drawable/design"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="20dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="600dp">
+
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:padding="20dp"
+        android:background="@drawable/design"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/design_three"
+                android:padding="10dp"
+                android:text="Enter p"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/editTextText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/design_two"
+                android:ems="10"
+                android:hint="P"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/design_three"
+                android:padding="10dp"
+                android:text="Enter q"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/editTextText6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/design_two"
+                android:ems="10"
+                android:hint="q"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Enter g"
+                android:textColor="@color/white"
+                android:background="@drawable/design_three"
+                android:padding="10dp"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/editTextText7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="20dp"
+                android:background="@drawable/design_two"
+                android:padding="10dp"
+                android:inputType="text"
+                android:hint="g"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/design_three"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine3"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/design_two"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,14 +1,14 @@
-package com.example.gamedesign2;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.mysticstreetdicegame2;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
@@ -102,8 +102,4 @@ public class Dice_mode_2 extends AppCompatActivity {
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.enter_from_bottom);
         imageView9.startAnimation(animation);
     }
-
-
-
-
 }

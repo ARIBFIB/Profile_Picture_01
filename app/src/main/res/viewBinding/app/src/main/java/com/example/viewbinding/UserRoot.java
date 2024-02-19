@@ -1,9 +1,6 @@
-package com.zorona.liverooms.modelclass;
+package com.example.viewbinding;
 
 import com.google.gson.annotations.SerializedName;
-import com.zorona.liverooms.activity.LoginActivityActivity;
-
-import java.util.Random;
 
 public class UserRoot {
 
