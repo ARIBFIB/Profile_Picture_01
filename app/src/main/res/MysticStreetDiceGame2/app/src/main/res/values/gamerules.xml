@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Game_Rule">Rules for playing Street Craps Dice Game</string>
+    <string name="Rule_1">1- Hi/Lo throw: Both players throw the dice. The one with higher number becomes the Player. The other becomes the Spectator.</string>
+    <string name="Rule_2">2- 1st Roll: Player rolls. It’s a win if Player gets 7 and 11. If Player rolls 2, 3 and 12, Spectator wins. Any other number becomes a point. (ex. 6).</string>
+    <string name="Rule_3">3- Game roll: Player rolls to get the point (ex.6). If Player rolls 7, Spectator wins and the round is over. If Player rolls the point number (ex.6), Player wins and round is over. Player keeps rolling until a point or 7 is rolled.</string>
+    <string name="Rule_4">4- From 2nd Round onward will not include the Hi/Lo throw, the previous winner becomes the Player.</string>
+
+
+    <string name="Establishing_the_Shooter">Establishing the Shooter: The first step is to determine who will be the shooter. This can be done by various methods, such as rolling for the highest number or by mutual agreement.</string>
+</resources>

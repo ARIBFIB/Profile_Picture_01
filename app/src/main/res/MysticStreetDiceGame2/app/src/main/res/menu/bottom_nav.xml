@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menudic1"
+        android:icon="@mipmap/shopping"
+        android:title="Store"/>
+
+    <item
+        android:id="@+id/menudice2"
+        android:icon="@drawable/perspective_dice_six_faces_random__4_"
+        android:title="Store"/>
+
+
+    <item
+        android:id="@+id/menudice3"
+        android:icon="@drawable/store_btn"
+        android:title="Store"/>
+
+
+    <item
+        android:id="@+id/menudice4"
+        android:icon="@drawable/store_btn"
+        android:title="Store"/>
+
+
+
+
+</menu>
